@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakash Joshi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#hero" class="logo">Prakash Joshi</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <img src="images/profile_picture.jpg" alt="Prakash Joshi" class="profile-pic" />
+    <h1>Prakash Joshi</h1>
+    <p class="tagline">Geomatics Engineer & GIS Developer</p>
+    <p class="hero-subtagline">Transforming data into maps, and maps into meaningful action.</p>
+    <a href="#projects" class="btn">Explore My Work</a>
+  </section>
+  
+  
+  
+
+  <!-- About Me Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am an innovative Geomatics Engineer with a comprehensive skill set in UAV-based remote sensing, topographic surveying, GIS development, 
+        and spatial data automation. My expertise spans the full geospatial workflow—from aerial data acquisition to advanced spatial analysis
+         and decision support system development. I work with multispectral and RGB drone imagery for terrain modeling, land use classification,
+          3D reconstruction, and environmental monitoring, applying a broad range of remote sensing techniques.
+      </p>
+      <p>
+        I have hands-on experience conducting drone-based topographic and engineering surveys using GNSS and Total Station, 
+        particularly in hydropower alignment studies, road design, and infrastructure planning. Beyond fieldwork, I specialize in developing 
+        automated geospatial solutions using tools like Python, PostgreSQL/PostGIS, Google Earth Engine, and QGIS. My goal is to integrate surveying, 
+        remote sensing, and programming into efficient systems that support smarter decisions in agriculture, urban development, and sustainability.
+      </p>
+      
+    </div>
+    <div class="about-image">
+      <img src="images/24.png" alt="Prakash Joshi Full-body" />
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Multispectral UAV-Based Yield Estimation</h3>
+        <p>Used UAV multispectral images and ground nitrogen status for yield estimation. Built CSM models to track vegetation height across six phases of data collection.</p>
+      </div>
+      <div class="project-card">
+        <h3>Urban Heat Island (UHI) Analysis using GEE</h3>
+        <p>Spatio-temporal UHI study in Kathmandu using Landsat imagery in Google Earth Engine. Visualized change over 20 years using LST maps.</p>
+      </div>
+      <div class="project-card">
+        <h3>Hydropower Feasibility Survey</h3>
+        <p>Topographic route survey for a hydropower project using GNSS and Total Station. Alignment planning based on terrain model and cross-sections.</p>
+      </div>
+      <div class="project-card">
+        <h3>Route Survey & Geometric Design</h3>
+        <p>Created optimal road alignments and profiles using elevation data and design constraints. Output included plan-profile sheets and cross-sections.</p>
+      </div>
+      <div class="project-card">
+        <h3>PgRouting with PostGIS</h3>
+        <p>Built a shortest path navigation model for a city using PgRouting in PostgreSQL/PostGIS. Integrated with QGIS for visualization.</p>
+      </div>
+      <div class="project-card">
+        <h3>Land Suitability using AHP</h3>
+        <p>Performed land classification using slope, soil, LU/LC data with Analytical Hierarchy Process (AHP) method inside QGIS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>UAV Mapping</h3><p>Terrain & plant health analysis ,3D modelling using multispectral and RGB drones.</p></div>
+      <div class="skill-card"><h3>GIS Development</h3><p>Custom dashboards, mapping tools & spatial DB integration using PostGIS.</p></div>
+      <div class="skill-card"><h3>Topographic Survey</h3><p>Hydropower, highway, and urban projects using GNSS & Total Station.</p></div>
+      <div class="skill-card"><h3>JAVA,Python,HTML,CSS & JavaScript</h3><p>Used for spatial automation, frontend scripts, and GEE coding.</p></div>
+      <div class="skill-card"><h3>Pix4D,ArcGIS & QGIS</h3><p>Ortho mosaic generation, vegetation index mapping, terrain modeling and preparing maps.</p></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <!-- 17 images (excluding 16, 18, 20) -->
+      <img src="images/1.png" alt="Project 1" />
+      <img src="images/2.jpg" alt="Project 2" />
+      <img src="images/3.jpg" alt="Project 3" />
+      <img src="images/4.jpg" alt="Project 4" />
+      <img src="images/5.jpg" alt="Project 5" />
+      <img src="images/6.png" alt="Project 6" />
+  
+     
+      
+      
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video">
+    <h2>Drone Operation in Action</h2>
+    <video controls width="100%">
+      <source src="images/21.mp4" type="video/mp4" />
+      Your browser does not support this video.
+    </video>
+  </section>
+
+
+<h2>My Hometown: Bhimdatta, Kanchanpur</h2>
+<div id="map" style="height: 400px; width: 100%; border: 1px solid #ccc;"></div>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> prakashjoshi2078@gmail.com</p>
+    <p><strong>Phone:</strong> +977 9863361664</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prakash-joshi-561b37314/" target="_blank">View Profile</a></p>
+    <p><strong>Resume:</strong> <a href="Prakash_Joshi_Resume_Final_Updated.pdf" download>Download PDF</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Prakash Joshi | Geomatics Engineer</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+
+
+
+  <script>
+  const map = L.map('map').setView([28.9937, 80.1791], 13); // Coordinates for Bhimdatta
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([28.9937, 80.1791]).addTo(map)
+    .bindPopup('Bhimdatta, Kanchanpur')
+    .openPopup();
+</script>
+
+</body>
+</html>
